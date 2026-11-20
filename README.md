@@ -69,16 +69,6 @@ Open <http://127.0.0.1:8001>. If port 8001 is unavailable, choose another permit
 
 The generator replaces the current synthetic images and `ground_truth.csv`. Run batch evaluation after regeneration so `data/results.csv` matches that new dataset.
 
-## Demo walkthrough
-
-1. Open the local UI and upload an image from `data/synthetic/`.
-2. Show the OCR text, confidence, preprocessing method, and time. Explain that a five-character response is a candidate, while batch accuracy measures correctness.
-3. Complete a provider test widget, verify its acquired token, and show a failure case with the hCaptcha/Turnstile invalid-token demo. Google's public v2 test key accepts any token, so it cannot demonstrate rejection.
-4. Load the supplied CSV summary and explain that it reads metadata only; no company page is opened.
-5. Run the batch evaluator, show accuracy and mismatches, and mention its current runtime.
-
-See [DEMO_SCRIPT.md](DEMO_SCRIPT.md) for a timed 3–5 minute recording outline.
-
 ## API endpoints
 
 | Method | Endpoint | Purpose |
@@ -121,7 +111,7 @@ Generated images and batch output are ignored by Git. A reviewer can create the 
 
 ## Safety and limitations
 
-- Test only generated synthetic challenges, locally hosted demonstrations, candidate-owned sites, or official provider test environments.
+- Test only generated synthetic challenges, locally hosted test pages, candidate-owned sites, or official provider test environments.
 - Do not automate the listed live websites, submit their contact forms, or harvest tokens.
 - Provider detection uses markers in supplied HTML; it does not fetch URLs or inspect dynamically rendered pages.
 - Session counters are held in memory and reset when Uvicorn restarts.
