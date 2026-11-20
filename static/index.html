@@ -360,6 +360,11 @@
 
 <script>
 const byId = (id) => document.getElementById(id);
+const providerNames = {
+  recaptcha: 'Google reCAPTCHA v2',
+  hcaptcha: 'hCaptcha',
+  turnstile: 'Cloudflare Turnstile'
+};
 let providerConfig = null;
 let widgetId = null;
 let widgetProvider = null;
