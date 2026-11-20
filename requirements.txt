@@ -1,0 +1,12 @@
+# Python 3.11 application dependencies.
+fastapi==0.165.0
+uvicorn==0.54.0
+pydantic==2.14.4
+python-multipart==0.0.34
+pillow==13.0.0
+opencv-python==5.1.0.95
+pytesseract==0.3.13
+requests==2.34.2
+python-dotenv==1.2.4
+
+# Tesseract OCR 5.4.0 is a separate system install; it is not a pip package.

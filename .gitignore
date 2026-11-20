@@ -1,0 +1,21 @@
+# Python environments and cache
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Generated challenge images and run output
+data/synthetic/
+data/results.csv
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
