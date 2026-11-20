@@ -13,6 +13,10 @@ __pycache__/
 # Generated challenge images and run output
 data/synthetic/
 data/results.csv
+recordings/
+*.mp4
+*.mov
+*.webm
 
 # Editor / OS files
 .vscode/
